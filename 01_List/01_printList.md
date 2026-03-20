@@ -1,4 +1,5 @@
 ![题面](01.png)
+```cpp
 /**
 *  struct ListNode {
 *        int val;
@@ -25,3 +26,4 @@ public:
         return answer;
     }
 };
+``` 
