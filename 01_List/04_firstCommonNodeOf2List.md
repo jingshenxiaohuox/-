@@ -1,3 +1,5 @@
+![题面](04_1.png)
+![题面](04_2.png)
 ```cpp
 /*
 struct ListNode {
