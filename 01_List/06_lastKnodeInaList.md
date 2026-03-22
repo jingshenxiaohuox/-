@@ -19,14 +19,17 @@ public:
      * @return ListNode类
      */
     ListNode* FindKthToTail(ListNode* pHead, int k) {
+        //双指针
         ListNode* head = pHead;
         ListNode* tail = pHead;
+        //快的指针先走k步，如果走的过程中就变成了nullptr，证明k大于链表长度
         while(k)
         {
             if(!head) return nullptr;
             head = head->next;
             k--;
         }
+        //快的和慢的一起走，快的编程nullptr的时候，慢的指的就是倒数第k给节点
         while(head)
         {
             head = head->next;
